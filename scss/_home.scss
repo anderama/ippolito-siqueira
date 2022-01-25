@@ -1,0 +1,231 @@
+.s-hero {
+    width: 100%;
+    height: 96rem;
+    background: url(../img/banner.png) no-repeat center center;
+    padding-top: 17.5rem;
+
+    .hero-logo {
+      position: absolute;
+      top: 45%;
+    }
+}
+
+.s-sobre {
+  padding: 7.2rem 0 14.7rem;
+  background-color: #D6D6D6;
+  .sobre {
+    padding-top: 7.2rem;
+    display: flex;
+    align-items: flex-start;
+    img {
+      width: 100%;
+      max-width: 39.9rem;
+      height: 30rem;
+      border-radius: 1rem;
+      margin-right: 26rem;
+    }
+    .text {
+      width: 100%;
+      max-width: 40rem;
+      margin-top: 3.6rem;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 0.3rem;
+        top: 50%;
+        right: 120%;
+        border-radius: 1rem;
+        background: $brand-blue;
+      }
+      h3 {
+        color: $brand-blue;
+      }
+      p {
+        color: $white-gray;
+      }
+    }
+    button {
+      margin-top: 3.2rem;
+    }
+  }
+}
+
+.s-juridicos {
+  padding: 7.2rem 0 14.7rem;
+  background-color: #D6D6D6;
+  .banner {
+    width: 100%;
+    height: 40rem;
+    background: url(../img/banner-2.png) no-repeat center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2, span {
+      color: $white;
+      text-align: center;
+      @include flex(column, center, center);
+    }
+    h2 {
+      font-weight: 300;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+  .servicos-juridicos {
+    padding-top: 7.2rem;
+    display: flex;
+    img {
+      width: 100%;
+      max-width: 39.9rem;
+      height: 30rem;
+      border-radius: 1rem;
+    }
+    .text {
+      width: 100%;
+      max-width: 40rem;
+      margin-top: 3.6rem;
+      margin-right: 26rem;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 0.3rem;
+        top: 50%;
+        left: 120%;
+        border-radius: 1rem;
+        background: $brand-blue;
+      }
+      h3 {
+        color: $brand-blue;
+      }
+      p {
+        color: $white-gray;
+      }
+    }
+    button {
+      margin-top: 3.2rem;
+    }
+  }
+}
+
+.s-advogados {
+  .banner {
+    background: url(../img/banner-3.png) no-repeat center center;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+      @include flex(column, center, center);
+      h2 {
+        color: $brand-blue;
+        text-align: center;
+        font-weight: 400;
+      }
+      p {
+        margin-top: 3rem;
+        color: $white-gray;
+        text-align: center;
+        width: 100%;
+        max-width: 55rem;
+      }
+      button {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+.s-contato {
+  .banner {
+    background: url(../img/contato-banner.png) no-repeat center center;
+    height: 80rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      @include flex(row, center, space-around);
+      padding: 12rem 0;
+      .text {
+        @include flex(column, center, center);
+        h2 {
+          color: $white;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 3.6rem;
+          letter-spacing: 1px;
+        }
+        p {
+          font-family: 'Lato', sans-serif;
+          color: rgba(255, 255, 255, 0.908);
+          letter-spacing: 1px;
+          font-weight: bold;
+          &:not(:first-child) {
+            padding-top: 1.6rem;
+          }
+        }
+      }
+      .formulario {
+        .form {
+          width: 100%;
+          min-width: 51.2rem;
+          font-size: 1.6rem;
+  
+          label, input, textarea, button {
+            display: block;
+            width: 100%;
+          }
+          label {
+            font-size: 1.8rem;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 1rem;
+          }
+          input, textarea {
+            font: 'Lato', sans-serif;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            transition: border-color, box-shadow 0.2s;
+  
+            &:hover, &:focus {
+              outline: none;
+              border-color: $form;
+              box-shadow: 0 0 0 2px $form;
+            }
+          }
+          textarea {
+            min-height: 13rem;
+            resize: vertical;
+          }
+          button {
+            display: block;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: $form;
+            color: #fff;
+            font: 'Lato', sans-serif;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+  
+            &:hover {
+              opacity: 0.9;
+              background: $form;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8.8rem;
+    display: flex;
+    background-color: #161611;
+
+    .container {
+      @include flex(row, center, space-between);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      ul {
+          display: flex;
+          align-items: center;
+          margin-right: 5.9rem;
+      }
+      li {
+          &:not(:first-child) {
+              margin-left: 3.8rem;
+          }
+      }
+      a {
+          font-family: 'Josefin Sans', sans-serif;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 125%;
+          color: #fff;
+          transition: all 0.3s ease;
+  
+          &:hover {
+              color: $sec-color;
+          }
+      }
+  }
+    @include responsive(1085px) {
+      nav {
+          ul {
+              margin-right: 3rem;
+              li {
+                  &:not(:first-child) {
+                      margin-left: 2.5rem;
+                  }
+              }
+          }
+      }
+    }
+    @include responsive(991px) {
+      .logo {
+          max-width: 3.5rem;
+      }
+      nav {
+          ul {
+              display: none;
+          }
+      }
+    }
+    @include responsive(480px) {
+      height: 7.3rem;
+      nav {
+          .btn-secondary {
+              display: none;
+          }
+      }
+    }
+}
