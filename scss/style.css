@@ -260,8 +260,10 @@ footer p {
 
 @media (max-width: 480px) {
   .s-hero {
-    height: 60rem;
     background: url(../img/background-mobile.png);
+  }
+  .s-hero .container .hero-logo {
+    padding-top: 15rem;
   }
 }
 
@@ -338,6 +340,39 @@ footer p {
   }
   .s-sobre .sobre button {
     margin-top: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .s-sobre .container {
+    padding: 0 1.5rem;
+  }
+  .s-sobre .container h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .s-sobre .container .sobre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 3.2rem;
+  }
+  .s-sobre .container .sobre .text {
+    text-align: center;
+  }
+  .s-sobre .container .sobre img {
+    max-width: 25rem;
+    margin: 0 0 3.2rem;
   }
 }
 
