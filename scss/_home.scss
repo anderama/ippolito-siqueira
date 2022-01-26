@@ -1,6 +1,6 @@
 .s-hero {
     width: 100%;
-    height: 96rem;
+    height: 94rem;
     background: url(../img/banner.png) no-repeat center center;
     padding-top: 17.5rem;
 
@@ -8,7 +8,40 @@
       position: absolute;
       top: 45%;
     }
+    @include responsive(1366px) {
+      height: 76rem;
+      background-size: cover;
+    }
+    @include responsive(1050px) {
+      .hero-logo {
+        top: 34%;
+        left: 4rem;
+        img {
+          max-width: 90%;
+        }
+      }
+    }
+    @include responsive(860px) {
+      background: url(../img/background-mobile.png);
+      background-size: cover;
+      .container {
+        .hero-logo {
+          position: relative;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 10rem;
+          margin: 0 1.6rem;
+        }
+      }
+    }
+    @include responsive(480px) {
+      height: 60rem;
+      background: url(../img/background-mobile.png);
+    }
 }
+
 
 .s-sobre {
   padding: 7.2rem 0 14.7rem;
@@ -50,6 +83,32 @@
     button {
       margin-top: 3.2rem;
     }
+  }
+  @include responsive(1366px) {
+    .container {
+      padding: 0 9.5rem;
+    }
+  }
+  @include responsive(991px) {
+    .sobre {
+      img {
+        max-width: 29rem;
+        height: auto;
+        margin-right: 5rem;
+      }
+      .text {
+        margin-top: 0;
+        &::before {
+          display: none;
+        }
+      }
+      button {
+        margin-top: 2.2rem;
+      }
+    }
+  }
+  @include responsive(480px) {
+
   }
 }
 

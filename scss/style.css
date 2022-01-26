@@ -209,7 +209,7 @@ footer p {
 
 .s-hero {
   width: 100%;
-  height: 96rem;
+  height: 94rem;
   background: url(../img/banner.png) no-repeat center center;
   padding-top: 17.5rem;
 }
@@ -217,6 +217,52 @@ footer p {
 .s-hero .hero-logo {
   position: absolute;
   top: 45%;
+}
+
+@media (max-width: 1366px) {
+  .s-hero {
+    height: 76rem;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1050px) {
+  .s-hero .hero-logo {
+    top: 34%;
+    left: 4rem;
+  }
+  .s-hero .hero-logo img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 860px) {
+  .s-hero {
+    background: url(../img/background-mobile.png);
+    background-size: cover;
+  }
+  .s-hero .container .hero-logo {
+    position: relative;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10rem;
+    margin: 0 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .s-hero {
+    height: 60rem;
+    background: url(../img/background-mobile.png);
+  }
 }
 
 .s-sobre {
@@ -270,6 +316,29 @@ footer p {
 
 .s-sobre .sobre button {
   margin-top: 3.2rem;
+}
+
+@media (max-width: 1366px) {
+  .s-sobre .container {
+    padding: 0 9.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .s-sobre .sobre img {
+    max-width: 29rem;
+    height: auto;
+    margin-right: 5rem;
+  }
+  .s-sobre .sobre .text {
+    margin-top: 0;
+  }
+  .s-sobre .sobre .text::before {
+    display: none;
+  }
+  .s-sobre .sobre button {
+    margin-top: 2.2rem;
+  }
 }
 
 .s-juridicos {
