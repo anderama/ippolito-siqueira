@@ -99,7 +99,7 @@ header {
             background: $black;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-evenly;
             transform: translateX(100%);
             transition: transform 0.3s ease-in;
           }
