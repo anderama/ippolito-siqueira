@@ -69,6 +69,7 @@
       max-width: 40rem;
       margin-top: 3.6rem;
       position: relative;
+      text-align: justify;
 
       &::before {
         position: absolute;
@@ -85,7 +86,6 @@
       }
       p {
         color: $white-gray;
-        text-align: justify;
       }
     }
     button {
@@ -175,6 +175,7 @@
       margin-top: 3.6rem;
       margin-right: 26rem;
       position: relative;
+      text-align: justify;
 
       &::before {
         position: absolute;
@@ -191,7 +192,6 @@
       }
       p {
         color: $white-gray;
-        text-align: justify;
       }
     }
     button {
