@@ -344,6 +344,9 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  .s-sobre {
+    padding-bottom: 2rem;
+  }
   .s-sobre .container {
     padding: 0 1.5rem;
   }
@@ -465,6 +468,72 @@ footer p {
 
 .s-juridicos .servicos-juridicos button {
   margin-top: 3.2rem;
+}
+
+@media (max-width: 1366px) {
+  .s-juridicos .container {
+    padding: 0 9.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .s-juridicos .container {
+    padding: 0 1.5rem;
+  }
+  .s-juridicos .container .servicos-juridicos {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .s-juridicos .container .servicos-juridicos button {
+    margin-top: 2.2rem;
+  }
+  .s-juridicos .container .servicos-juridicos img {
+    max-width: 29rem;
+    height: 18rem;
+    margin-left: 5rem;
+  }
+  .s-juridicos .container .servicos-juridicos .text {
+    margin: 0;
+    max-width: 30rem;
+  }
+  .s-juridicos .container .servicos-juridicos .text::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .s-juridicos .banner {
+    height: 20rem;
+  }
+  .s-juridicos .banner h2 {
+    font-size: 2.4rem;
+  }
+  .s-juridicos .container .servicos-juridicos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .s-juridicos .container .servicos-juridicos img {
+    max-width: 25rem;
+    margin: 0 0 3.2rem;
+  }
+  .s-juridicos .container .servicos-juridicos .text {
+    text-align: center;
+  }
 }
 
 .s-advogados .banner {
