@@ -106,7 +106,8 @@ p {
 }
 
 header {
-  position: absolute;
+  position: fixed;
+  z-index: 800;
   top: 0;
   left: 0;
   width: 100%;
@@ -115,6 +116,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #161611;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 header .container {
@@ -265,6 +268,15 @@ header nav a:hover {
   header nav a {
     font-size: 1.2rem;
   }
+}
+
+.active-header {
+  backdrop-filter: blur(10px) saturate(121%);
+  -webkit-backdrop-filter: blur(10px) saturate(121%);
+  background-color: rgba(0, 0, 0, 0.54);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 62px 152px rgba(0, 0, 0, 0.19), 0px 18.6912px 45.8236px rgba(0, 0, 0, 0.123802), 0px 7.76336px 19.0328px rgba(0, 0, 0, 0.095), 0px 2.80786px 6.88378px rgba(0, 0, 0, 0.0661981);
+          box-shadow: 0px 62px 152px rgba(0, 0, 0, 0.19), 0px 18.6912px 45.8236px rgba(0, 0, 0, 0.123802), 0px 7.76336px 19.0328px rgba(0, 0, 0, 0.095), 0px 2.80786px 6.88378px rgba(0, 0, 0, 0.0661981);
 }
 
 @-webkit-keyframes navLinkFade {

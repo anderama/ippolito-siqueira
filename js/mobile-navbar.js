@@ -42,3 +42,11 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
+
+function scrollHeader() {
+  const nav = document.getElementById('headerActive');
+
+  if(this.scrollY >= 50) nav.classList.add('active-header'); else nav.classList.remove('active-header');
+  }
+
+  window.addEventListener('scroll', scrollHeader);
