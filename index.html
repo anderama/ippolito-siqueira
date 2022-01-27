@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -30,7 +31,7 @@
 
   <section class="s-hero">
     <div class="container">
-      <div class="hero-logo">
+      <div class="hero-logo" data-aos="fade-right">
         <img src="img/logo-full.png" alt="">
       </div>
     </div>
@@ -38,10 +39,10 @@
 
   <section class="s-sobre">
     <div class="container">
-      <h2>SOBRE NÓS</h2>
+      <h2 data-aos="fade-right">SOBRE NÓS</h2>
       <div class="sobre">
-        <img src="img/escritório.jpg" alt="">
-        <div class="text">
+        <img src="img/escritório.jpg" data-aos="zoom-in-up" alt="">
+        <div class="text" data-aos="fade-left">
           <h3>NOSSO ESCRITÓRIO</h3>
           <p>Fundado em 2015, o escritório Ippólito Siqueira
             Advogados tem como propósito o alinhamento de
@@ -55,11 +56,11 @@
 
   <section class="s-juridicos">
     <div class="banner">
-      <h2>Serviços jurídicos voltados aos específicos <span>interesses e direitos dos nossos clientes</span></h2>
+      <h2 data-aos="zoom-in-down">Serviços jurídicos voltados aos específicos <span>interesses e direitos dos nossos clientes</span></h2>
     </div>
     <div class="container">
       <div class="servicos-juridicos">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h3>SERVIÇOS JURÍDICOS</h3>
           <p>Nossa equipe de profissionais especializados
             oferece serviços voltados para pessoas físicas e
@@ -67,14 +68,14 @@
             abrangendo demandas consultivas e contenciosas.</p>
           <button class="btn-primary">Saiba mais</button>
         </div>
-        <img src="img/serviços.png" alt="">
+        <img src="img/serviços.png" data-aos="fade-left" alt="">
       </div>
     </div>
   </section>
 
   <section class="s-advogados">
-    <div class="banner">
-      <div class="container">
+    <div class="banner" data-aos="zoom-in">
+      <div class="container" data-aos="zoom-in-up">
         <h2>ADVOGADOS ESPECIALIZADOS</h2>
         <p>Os advogados fundadores são profissionais em constante atualização e
           aprofundamento em suas áreas de atividade, possuindo vasta experiência
@@ -85,9 +86,9 @@
   </section>
 
   <section class="s-contato">
-    <div class="banner">
+    <div class="banner" data-aos="zoom-in">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="zoom-in-down">
           <h2>ENTRE EM CONTATO</h2>
           <p>Porto Alegre - Rio Grande do Sul</p>
           <p>contato@ippolitosiqueira.com.br</p>
@@ -101,7 +102,7 @@
             </ul>
           </div>
         </div>
-        <div class="formulario">
+        <div class="formulario" data-aos="fade-left">
           <form action="https://formsubmit.co/brunnowtf@gmail.com" method="POST" class="form">
             <label for="name">Nome</label>
             <input type="text" name="name" id="name" required />
@@ -124,10 +125,21 @@
     </div>
   </section>
 
-  <!-- <footer>
+  <footer>
     <div class="container">
       <p>© Ippólito Siqueira. Todos os direitos reservados.</p>
     </div>
-  </footer> -->
+  </footer>
+
+  <!-- AOS Animate -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Initialize AOS Animate -->
+  <script>
+    AOS.init({
+          duration: 1000,
+          once: true
+      });
+  </script>
 </body>
 </html>

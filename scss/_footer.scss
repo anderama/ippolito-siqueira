@@ -6,4 +6,9 @@ footer {
     color: $white;
     text-align: center;
   }
+  @include responsive(480px) {
+    p {
+      font-size: 1.4rem;
+    }
+  }
 }
