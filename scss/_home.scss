@@ -271,6 +271,11 @@
       }
     }
   }
+  @include responsive(1050px) {
+    .banner {
+      background-size: cover;
+    }
+  }
 }
 
 .s-contato {
@@ -353,6 +358,34 @@
               opacity: 0.9;
               background: $form;
             }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(991px) {
+    .banner {
+      .container {
+        @include flex(column, center, center);
+      }
+    }
+  }
+  @include responsive(480px) {
+    .banner {
+      .container {
+        .text {
+          h2 {
+            font-size: 2.4rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+        .formulario {
+          .form {
+            min-width: 34rem;
+            font-size: 1.6rem;
+            padding-top: 3.6rem;
           }
         }
       }

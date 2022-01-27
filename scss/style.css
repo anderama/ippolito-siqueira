@@ -585,6 +585,12 @@ footer p {
   margin-top: 3rem;
 }
 
+@media (max-width: 1050px) {
+  .s-advogados .banner {
+    background-size: cover;
+  }
+}
+
 .s-contato .banner {
   background: url(../img/contato-banner.png) no-repeat center center;
   height: 80rem;
@@ -709,5 +715,37 @@ footer p {
 .s-contato .banner .container .formulario .form button:hover {
   opacity: 0.9;
   background: #1e90ff;
+}
+
+@media (max-width: 991px) {
+  .s-contato .banner .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .s-contato .banner .container .text h2 {
+    font-size: 2.4rem;
+  }
+  .s-contato .banner .container .text p {
+    font-size: 1.4rem;
+  }
+  .s-contato .banner .container .formulario .form {
+    min-width: 34rem;
+    font-size: 1.6rem;
+    padding-top: 3.6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
