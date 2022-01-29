@@ -1209,4 +1209,164 @@ footer p {
     text-align: justify !important;
   }
 }
+
+.contato .banner {
+  background: url(../img/contato-banner.png) no-repeat center center;
+  height: 94rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contato .banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 12rem 0;
+}
+
+.contato .banner .container .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+.contato .banner .container .text h2 {
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.6rem;
+  letter-spacing: 1px;
+}
+
+.contato .banner .container .text p {
+  font-family: 'Lato', sans-serif;
+  color: rgba(255, 255, 255, 0.908);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.contato .banner .container .text p:not(:first-child) {
+  padding-top: 1.6rem;
+}
+
+.contato .banner .container .formulario .form {
+  width: 100%;
+  min-width: 85.2rem;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.contato .banner .container .formulario .form label, .contato .banner .container .formulario .form input, .contato .banner .container .formulario .form textarea, .contato .banner .container .formulario .form button {
+  display: block;
+  width: 100%;
+}
+
+.contato .banner .container .formulario .form label {
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.contato .banner .container .formulario .form input, .contato .banner .container .formulario .form textarea {
+  font: 'Lato', sans-serif;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  -webkit-transition: border-color, -webkit-box-shadow 0.2s;
+  transition: border-color, -webkit-box-shadow 0.2s;
+  transition: border-color, box-shadow 0.2s;
+  transition: border-color, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.contato .banner .container .formulario .form input:hover, .contato .banner .container .formulario .form input:focus, .contato .banner .container .formulario .form textarea:hover, .contato .banner .container .formulario .form textarea:focus {
+  outline: none;
+  border-color: #1e90ff;
+  -webkit-box-shadow: 0 0 0 2px #1e90ff;
+          box-shadow: 0 0 0 2px #1e90ff;
+}
+
+.contato .banner .container .formulario .form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.contato .banner .container .formulario .form button {
+  display: block;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #1e90ff;
+  color: #fff;
+  font: 'Lato', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contato .banner .container .formulario .form button:hover {
+  opacity: 0.9;
+  background: #1e90ff;
+}
+
+@media (max-width: 991px) {
+  .contato .banner .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contato .banner .container .text h2 {
+    font-size: 2.4rem;
+  }
+  .contato .banner .container .text p {
+    font-size: 1.4rem;
+  }
+  .contato .banner .container .formulario .form {
+    min-width: 34rem;
+    font-size: 1.6rem;
+    padding-top: 3.6rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
