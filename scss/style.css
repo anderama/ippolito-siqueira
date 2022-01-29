@@ -935,7 +935,7 @@ footer p {
 
 @media (max-width: 1366px) {
   .sobre-nos {
-    height: 75rem;
+    height: 77rem;
   }
 }
 
@@ -948,6 +948,106 @@ footer p {
   }
   .sobre-nos .container h2 {
     font-size: 3.2rem;
+  }
+}
+
+.nossosAdvogados {
+  width: 100%;
+  height: 63rem;
+  background: url(../img/banner-nossosAdv.png) no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nossosAdvogados .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nossosAdvogados .container h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.nossosAdvogados .container p {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  width: 100%;
+  max-width: 63rem;
+  margin-top: .6rem;
+}
+
+@media (max-width: 480px) {
+  .nossosAdvogados .container h2 {
+    text-align: left;
+  }
+  .nossosAdvogados .container p {
+    text-align: justify;
+  }
+}
+
+.advogados .container {
+  padding: 0 1.5rem;
+}
+
+.advogados .container .text {
+  width: 100%;
+  max-width: 70rem;
+  margin-bottom: 9.8rem;
+}
+
+.advogados .container .text:not(:last-child) {
+  padding-top: 9.8rem;
+}
+
+.advogados .container .text h3 {
+  font-size: 3.2rem;
+  color: #161611;
+}
+
+.advogados .container .text ul li {
+  list-style-type: disc;
+  font-size: 1.6rem;
+  color: #2E2E29;
+  margin: 1rem 0 0 1.8rem;
+}
+
+@media (max-width: 1050px) {
+  .advogados .container {
+    padding: 0 9.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .advogados .container {
+    padding: 0 2.5rem;
+  }
+  .advogados .container .text h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
