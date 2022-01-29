@@ -105,6 +105,48 @@ p {
   opacity: 0.9;
 }
 
+.card {
+  background-color: #EAEAEA;
+  width: 100%;
+  min-width: 23rem;
+  height: 16rem;
+  border-radius: 1rem;
+  padding: 2.7rem;
+  margin-bottom: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 13.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+  .card {
+    min-width: 16rem;
+    height: 16rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+}
+
 header {
   position: fixed;
   z-index: 800;
@@ -1053,6 +1095,117 @@ footer p {
   .advogados .container .text h3 {
     font-size: 2.4rem;
     margin-bottom: 1.6rem;
+  }
+}
+
+.servicosJuridicos {
+  width: 100%;
+  height: 94rem;
+  background: url(../img/banner-servicos.jpg) no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicosJuridicos .container .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicosJuridicos .container .text h2 {
+  color: #ffffff;
+}
+
+.servicosJuridicos .container .text p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  max-width: 65rem;
+}
+
+.servicosJuridicos .container .text strong {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-top: 1.4rem;
+}
+
+.servicosJuridicos .container .blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.6rem;
+}
+
+.servicosJuridicos .container .blocks .card-block {
+  margin-right: 1.6rem;
+}
+
+.servicosJuridicos .container .blocks .card-block:last-child {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .servicosJuridicos {
+    height: 120rem;
+  }
+  .servicosJuridicos .container .blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .servicosJuridicos .container .blocks .card-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .servicosJuridicos .container .blocks .card-block:last-child {
+    margin-right: 1.6rem;
+  }
+  .servicosJuridicos .container .blocks .card-block .card:first-child {
+    margin-right: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicosJuridicos .blocks .card-block {
+    margin-right: 0 !important;
+  }
+  .servicosJuridicos .text h2 {
+    font-size: 3.2rem;
+    margin-top: 3.2rem;
+  }
+  .servicosJuridicos .text p {
+    font-size: 1.4rem;
+    text-align: justify !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

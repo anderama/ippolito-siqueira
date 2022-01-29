@@ -519,3 +519,78 @@
     }
   }
 }
+
+.servicosJuridicos {
+  width: 100%;
+  height: 94rem;
+  background: url(../img/banner-servicos.jpg) no-repeat center center;
+  background-size: cover;
+  @include flex(column, center, center);
+  .container {
+    .text {
+      @include flex(column, center, center);
+      h2 {
+        color: $white;
+      }
+      p {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        max-width: 65rem;
+      }
+      strong {
+        color: $white;
+        font-size: 1.8rem;
+        margin-top: 1.4rem;
+      }
+    }
+    .blocks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3.6rem;
+      .card-block {
+        margin-right: 1.6rem;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  @include responsive(991px) {
+    height: 120rem;
+    .container {
+      .blocks {
+        flex-direction: column;
+        .card-block {
+          display: flex;
+          &:last-child {
+            margin-right: 1.6rem;
+          }
+          .card {
+            &:first-child {
+              margin-right: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive(480px) {
+    .blocks {
+      .card-block {
+        margin-right: 0 !important;
+      }
+    }
+    .text {
+      h2 {
+        font-size: 3.2rem;
+        margin-top: 3.2rem;
+      }
+      p {
+        font-size: 1.4rem;
+        text-align: justify !important;
+      }
+    }
+  }
+}
