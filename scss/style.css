@@ -874,4 +874,80 @@ footer p {
     padding-top: 3.6rem;
   }
 }
+
+.sobre-nos {
+  width: 100%;
+  height: 94rem;
+  background: url(../img/bannerSobreNos.png) no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sobre-nos .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sobre-nos .container h4 {
+  color: #e6deb7;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+.sobre-nos .container h2 {
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.sobre-nos .container p {
+  width: 100%;
+  max-width: 75rem;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.sobre-nos .container p:not(:first-child) {
+  margin-top: 2.2rem;
+}
+
+@media (max-width: 1366px) {
+  .sobre-nos {
+    height: 75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-nos {
+    height: 86rem;
+  }
+  .sobre-nos .container {
+    padding: 0 3.5rem;
+  }
+  .sobre-nos .container h2 {
+    font-size: 3.2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

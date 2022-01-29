@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/style.css">
+  <title>Sobre nós</title>
+</head>
+<body>
+  <header id="headerActive">
+    <div class="container">
+      <a class="logo">
+        <img src="img/logo-mini.png" alt="">
+      </a>
+      <nav>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="">Nossos Advogados</a></li>
+          <li><a href="">Serviços</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sobre-nos">
+    <div class="banner">
+      <div class="container">
+        <h4 data-aos="fade-down">Nossa História</h4>
+        <h2 data-aos="fade-down">IPPÓLITO SIQUEIRA ADVOGADOS</h2>
+        <p data-aos="fade-left">O escritório de advocacia Ippólito Siqueira Advogados foi fundado em 2015 
+          na cidade de Porto Alegre. Seus sócios fundadores, pai e filho, possuíam um 
+          único ideal em comum: formar uma equipe de advogados especializados para que 
+          cada caso seja cuidado de maneira singular e dedicada.</p>
+        <p data-aos="fade-right">Com foco na conciliação de normas de direitos fundamentais, com o necessário 
+          desenvolvimento e elasticidade do mercado, o escritório surge com a proposta 
+          inovadora de apresentar a marca como um produto no mercado.</p>
+        <p data-aos="fade-up">Os primeiros trabalhos realizados foram para os setores imobiliários e empresariais 
+          e, posteriormente, com a forma de trabalho dinâmica e com interesse em soluções orgânicas, 
+          se estendeu à consultoria para departamentos jurídicos e empresas das mais diversas áreas 
+          cíveis, sempre integrando a técnica jurídica com a ampla vivência comercial dos sócios.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-contato">
+    <div class="banner" data-aos="zoom-in">
+      <div class="container">
+        <div class="text" data-aos="zoom-in-down">
+          <h2>ENTRE EM CONTATO</h2>
+          <p>Porto Alegre - Rio Grande do Sul</p>
+          <p>contato@ippolitosiqueira.com.br</p>
+          <p>(51) 9 9334-3006</p>
+          <div class="socials">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="formulario" data-aos="fade-left">
+          <form action="https://formsubmit.co/contato@ippolitosiqueira.com.br" method="POST" class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required />
+            <label for="phone">Telefone</label>
+            <input type="tel" name="phone" id="phone" required />
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" required></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            /> -->
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navbar Mobile -->
+  <script src="js/mobile-navbar.js"></script>
+  <!-- AOS Animate -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Initialize AOS Animate -->
+  <script>
+    AOS.init({
+          duration: 1000,
+          once: true
+      });
+  </script>
+</body>
+</html>
