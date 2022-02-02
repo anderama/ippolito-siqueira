@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/style.css">
+  <script src="js/svg-inject.min.js"></script>
+  <title>Obrigado</title>
+</head>
+<body>
+  <header id="headerActive">
+    <div class="container">
+      <a class="logo">
+        <img src="img/logo-mini.png" alt="">
+      </a>
+      <nav>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./nossosAdvogados.html">Nossos Advogados</a></li>
+          <li><a href="./servicos.html">Serviços</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="s-agradecimento">
+    <div class="container">
+      <div class="text">
+        <h1>RECEBEMOS SUA MENSAGEM!</h1>
+        <p>Nossa equipe irá lhe contatar em breve. Desde já agradecemos seu intesesse.</p>
+        <p>Atenciosamente,</p>
+        <strong>IPPÓLITO SIQUEIRA ADVOGADOS</strong>
+      </div>
+      <div class="imagem">
+        <img src="img/form.svg" onload="SVGInject(this)" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© Ippólito Siqueira. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Navbar Mobile -->
+  <script src="js/mobile-navbar.js"></script>
+  <!-- AOS Animate -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Initialize AOS Animate -->
+  <script>
+    AOS.init({
+          duration: 1000,
+          once: true
+      });
+  </script>
+</body>
+</html>
