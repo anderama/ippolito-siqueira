@@ -656,7 +656,7 @@
     .blocks {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       margin-top: 3.6rem;
       .card-block {
         margin-right: 1.6rem;
@@ -671,10 +671,11 @@
     .container {
       .blocks {
         flex-direction: column;
+        align-items: center;
         .card-block {
           display: flex;
           &:last-child {
-            margin-right: 1.6rem;
+            margin-right: 0;
           }
           .card {
             &:first-child {
@@ -687,6 +688,7 @@
   }
   @include responsive(480px) {
     .blocks {
+      align-items: center;
       .card-block {
         margin-right: 0 !important;
       }
